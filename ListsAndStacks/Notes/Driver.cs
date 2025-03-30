@@ -5,7 +5,7 @@ class DriverTwo
 {
     public static void Main()
     {
-        // String Hash Map
+        // String List
         List<String> list = new List<String>();
         list.Add("Cromwell");
         list.Add("Emerald");
@@ -14,6 +14,7 @@ class DriverTwo
         list.Add("Stewie");
         list.Add("Peter");
 
+        // Integer List
         List<int> list_age = new List<int>();
         list_age.Add(22);
         list_age.Add(21);
@@ -22,13 +23,21 @@ class DriverTwo
         list_age.Add(7);
         list_age.Add(46);
 
-        // Print the string hash map
-        list.Print();
-        Console.WriteLine();
+        // Doubly List
+        DoubleList<String> list_double = new DoubleList<String>();
+        list_double.Add("Cromwell");
+        list_double.Add("Dave");
+        list_double.Add("Emerald");
+        list_double.Add("Josh");
+        list_double.Add("Emma");
 
 
-        // Print the age hash map
-        list_age.Print();
+        Console.WriteLine("Searching for Node...");
+
+        // The returned node
+        Node<String> node = list.Get("Peter");
+
+        Console.WriteLine("Returned the following node: " + node.GetData().ToString());
         
 
     }

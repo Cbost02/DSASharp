@@ -1,76 +1,71 @@
 using System;
 
-class List<T>
-{
-    private Node<T> head;
-    private int length;
 
-    public List()
+class DoubleList<T>
+{
+    private Node<T> Head;
+    private int Length;
+
+    public DoubleList()
     {
-        head = null;
-        length = 0;
+        Head = null;
+        Length = 0;
     }
 
     public void Add(T data)
     {
         Node<T> node = new Node<T>(data);
-        
-        if(head == null)
+
+        if(Head == null)
         {
-            head = node;
-            return;
+            Head = node;
         }
         else
         {
-            Node<T> current = head;
-
+            Node<T> current = Head;
             while(current.Next != null)
             {
                 current = current.Next;
             }
+            node.Before = current;
             current.Next = node;
         }
     }
 
     public void Print()
     {
-        if(head == null)
+        if(Head == null)
         {
-            Console.Write("This list is empty!");
+            Console.WriteLine("This list is empty!");
         }
         else
         {
-            Node<T> current = head;
+            Node<T> current = Head;
 
             while(current != null)
             {
-                Console.Write(current.GetData().ToString() + " -> ");
+                Console.Write(current.GetData().ToString() + " <-> " );
                 current = current.Next;
             }
+            Console.WriteLine("null");
         }
-        Console.Write("null");
     }
 
     public Node<T> Get(T Data)
     {
         Node<T> node = new Node<T>(Data);
-        if(head == null)
+        if(Head == null)
         {
             return null;
         }
-        else if(string.Equals(head.GetData().ToString(), node.GetData().ToString()))
-        {
-            return head;
-        }
         else
         {
-            Node<T> current = head;
+            Node<T> current = Head;
 
-            // Run this loop only when the current & given node don't equal each other!
-            while(!string.Equals(current.GetData().ToString(), node.GetData().ToString()))
+            while(!string.Equals(current.GetData().ToString(), node.GetData().ToString))
             {
                 // If the next node is null, return an empty type
-                if(current == null)
+                if(current.Next == null)
                 {
                     Console.Write("There's no node that contains that piece of data!\n");
                     Console.WriteLine("Returninng null object...");

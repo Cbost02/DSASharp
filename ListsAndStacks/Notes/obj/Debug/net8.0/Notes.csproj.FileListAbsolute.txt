@@ -23,3 +23,32 @@
 /Users/cromwell/Desktop/Programming Languages/C#/Notes/Notes/obj/Debug/net8.0/Notes.pdb
 /Users/cromwell/Desktop/Programming Languages/C#/Notes/Notes/obj/Debug/net8.0/Notes.genruntimeconfig.cache
 /Users/cromwell/Desktop/Programming Languages/C#/Notes/Notes/obj/Debug/net8.0/ref/Notes.dll
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/bin/Debug/net8.0/appsettings.Development.json
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/bin/Debug/net8.0/appsettings.json
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/bin/Debug/net8.0/Notes.staticwebassets.endpoints.json
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/bin/Debug/net8.0/Notes
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/bin/Debug/net8.0/Notes.deps.json
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/bin/Debug/net8.0/Notes.runtimeconfig.json
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/bin/Debug/net8.0/Notes.dll
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/bin/Debug/net8.0/Notes.pdb
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/Notes.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/Notes.AssemblyInfoInputs.cache
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/Notes.AssemblyInfo.cs
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/Notes.csproj.CoreCompileInputs.cache
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/Notes.MvcApplicationPartsAssemblyInfo.cache
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/Notes.sourcelink.json
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/scopedcss/bundle/Notes.styles.css
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/staticwebassets.build.json
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/staticwebassets.development.json
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/staticwebassets.build.endpoints.json
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/staticwebassets/msbuild.Notes.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/staticwebassets/msbuild.Notes.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/staticwebassets/msbuild.build.Notes.props
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Notes.props
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Notes.props
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/Notes.dll
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/refint/Notes.dll
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/Notes.pdb
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/Notes.genruntimeconfig.cache
+/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/obj/Debug/net8.0/ref/Notes.dll

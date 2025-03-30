@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "MM2YYGqfuDS2NBC9vP+m0ZcpgCpqUPSfRiv84RxUzRI=",
+  "Hash": "R4KRBwi9NWENPclU6rBnMeDmYNwf+KM7vnfz45swTi8=",
   "Source": "Notes",
   "BasePath": "_content/Notes",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
