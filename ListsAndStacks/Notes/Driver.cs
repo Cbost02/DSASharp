@@ -2,7 +2,7 @@ using System;
 using System.Reflection;
 using Microsoft.AspNetCore.Identity;
 
-class DriverTwo<T>
+class DriverTwo
 {
     public static void Main()
     {
@@ -22,17 +22,17 @@ class DriverTwo<T>
 
         Console.WriteLine("Searching for data...");
 
-        if(list_string.hasNode(user_input))
+        if(list_string.hasNode(user_input)) // Checks the string list
         {
-            Console.WriteLine("Found data from list_string: " + list_string.Get(user_input).ToString());
+            Console.WriteLine("Found data from list_string: " + list_string.Get(user_input).GetData().ToString());
         }
-        else if(user_input is int && list_int.hasNode(int.Parse(user_input)))
+        else if(int.TryParse(user_input, out int number) && list_int.hasNode(int.Parse(user_input))) // Checks the integer list
         {
-            Console.WriteLine("Found data from list_int: " + list_int.Get(int.Parse(user_input)).ToString());
+            Console.WriteLine("Found data from list_int: " + list_int.Get(int.Parse(user_input)).GetData().ToString());
         }
         else if(list_double.hasNode(user_input))
         {
-            Console.WriteLine("Found data from list_double: " + list_double.Get(user_input).ToString());
+            Console.WriteLine("Found data from list_double: " + list_double.Get(user_input).GetData().ToString());
         }
         else
         {

@@ -103,7 +103,7 @@ class DoubleList<T>
             Node<T> current = Head;
 
             // Checks everything else
-            while(!string.Equals(current.GetData().ToString(), node.GetData().ToString()))
+            while(current != null)
             {
                 if(string.Equals(current.GetData().ToString(), node.GetData().ToString)) // checks the current node
                 {

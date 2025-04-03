@@ -103,7 +103,7 @@ class List<T>
             Node<T> current = head;
 
             // Checks everything else
-            while(!string.Equals(current.GetData().ToString(), node.GetData().ToString()))
+            while(current != null)
             {
                 if(string.Equals(current.GetData().ToString(), node.GetData().ToString)) // checks the current node
                 {
