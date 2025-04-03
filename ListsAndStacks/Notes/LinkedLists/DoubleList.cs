@@ -1,4 +1,6 @@
 using System;
+using System.Reflection.Emit;
+using Microsoft.AspNetCore.Mvc;
 
 
 class DoubleList<T>
@@ -12,6 +14,7 @@ class DoubleList<T>
         Length = 0;
     }
 
+    // Adds a node to the end of the list
     public void Add(T data)
     {
         Node<T> node = new Node<T>(data);
@@ -32,6 +35,7 @@ class DoubleList<T>
         }
     }
 
+    // Prints the list
     public void Print()
     {
         if(Head == null)
@@ -51,6 +55,7 @@ class DoubleList<T>
         }
     }
 
+    // Returns the node that contains the data
     public Node<T> Get(T Data)
     {
         Node<T> node = new Node<T>(Data);
@@ -79,5 +84,76 @@ class DoubleList<T>
             }
             return current;
         }
+    }
+
+    // Checks to see if the list contains a node with the specified data
+    public Boolean hasNode(T data)
+    {
+        Node<T> node = new Node<T>(data);
+        if(Head == null)
+        {
+            return false;
+        }
+        else if(string.Equals(Head.GetData().ToString(), node.GetData().ToString())) // checks the head of the list
+        {
+            return true;
+        }
+        else
+        {
+            Node<T> current = Head;
+
+            // Checks everything else
+            while(!string.Equals(current.GetData().ToString(), node.GetData().ToString()))
+            {
+                if(string.Equals(current.GetData().ToString(), node.GetData().ToString)) // checks the current node
+                {
+                    return true;
+                }
+                else
+                {
+                    current = current.Next;
+                }
+            }
+            return false;
+        }
+    }
+
+    // Returns the node at the specified index
+    public Node<T> GetAtIndex(int index)
+    {
+        if(Head == null)
+        {
+            Console.Write("This list is empty!");
+            Console.Write("Returning null object...");
+            return null;
+        }
+        else
+        {
+            Node<T> current = Head;
+
+            AAA:
+            if(index == 0)
+            {
+                return current;
+            }
+            else
+            {
+                index--;
+                current = current.Next;
+                goto AAA;
+            }
+        }
+    }
+
+    // Returns the length of the list
+    public int GetLength()
+    {
+        return Length;
+    }
+
+    // Returns the head of the list
+    public Node<T> GetHead()
+    {
+        return Head;
     }
 }

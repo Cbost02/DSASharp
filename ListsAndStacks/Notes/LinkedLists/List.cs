@@ -1,4 +1,5 @@
 using System;
+// Bencock cafe
 
 class List<T>
 {
@@ -84,5 +85,75 @@ class List<T>
             }
             return current;
         }
+    }
+
+    public Boolean hasNode(T data)
+    {
+        Node<T> node = new Node<T>(data);
+        if(head == null)
+        {
+            return false;
+        }
+        else if(string.Equals(head.GetData().ToString(), node.GetData().ToString())) // checks the head of the list
+        {
+            return true;
+        }
+        else
+        {
+            Node<T> current = head;
+
+            // Checks everything else
+            while(!string.Equals(current.GetData().ToString(), node.GetData().ToString()))
+            {
+                if(string.Equals(current.GetData().ToString(), node.GetData().ToString)) // checks the current node
+                {
+                    return true;
+                }
+                else
+                {
+                    current = current.Next;
+                }
+            }
+            return false;
+        }
+    }
+
+     // Returns the node at the specified index
+    public Node<T> GetAtIndex(int index)
+    {
+        if(head == null)
+        {
+            Console.Write("This list is empty!");
+            Console.Write("Returning null object...");
+            return null;
+        }
+        else
+        {
+            Node<T> current = head;
+
+            AAA:
+            if(index == 0)
+            {
+                return current;
+            }
+            else
+            {
+                index--;
+                current = current.Next;
+                goto AAA;
+            }
+        }
+    }
+
+    // Returns the length of the list
+    public int GetLength()
+    {
+        return length;
+    }
+
+    // Returns the head of the list
+    public Node<T> GetHead()
+    {
+        return head;
     }
 }
