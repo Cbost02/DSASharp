@@ -1,12 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "X5gf/gz/jug=",
+  "dgSpecHash": "dKOwpP8d040=",
   "success": true,
-  "projectFilePath": "/Users/Steve/Desktop/DSASharp/ListsAndStacks/Notes/Notes.csproj",
+  "projectFilePath": "/home/cromwell/Documents/C#/DSASharp/ListsAndStacks/Notes/Notes.csproj",
   "expectedPackageFiles": [
-    "/Users/Steve/.nuget/packages/microsoft.netcore.app.ref/8.0.12/microsoft.netcore.app.ref.8.0.12.nupkg.sha512",
-    "/Users/Steve/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.12/microsoft.aspnetcore.app.ref.8.0.12.nupkg.sha512",
-    "/Users/Steve/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.12/microsoft.netcore.app.host.osx-arm64.8.0.12.nupkg.sha512"
+    "/home/cromwell/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.15/microsoft.netcore.app.host.linux-x64.8.0.15.nupkg.sha512"
   ],
   "logs": []
 }

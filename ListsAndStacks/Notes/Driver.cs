@@ -6,40 +6,24 @@ class DriverTwo
 {
     public static void Main()
     {
-        // Declaring some things here
-        string? user_input = "";
-        List<string> list_string = new List<string>();
-        List<int> list_int = new List<int>();
-        DoubleList<string>? list_double = new DoubleList<string>();
+        DoubleList<int> list = new DoubleList<int>();
+
+        list.Add(1);
+        list.Add(2);
+        list.Add(3); 
+        list.Add(4); 
+        list.Add(5); 
+        list.Add(6); 
 
 
-        // Initializing the lists
-        InitializeLists(ref list_string, ref list_int, ref list_double);
+        int number_retrieved = list.GetAtIndex(3).GetData();
 
-        // Retrieving user information
-        Console.Write("Enter node key: ");
-        user_input = Console.ReadLine();
+        // Testing GetAtIndex() -- works
+        Console.WriteLine(number_retrieved);
 
-        Console.WriteLine("Searching for data...");
 
-        if(list_string.hasNode(user_input)) // Checks the string list
-        {
-            Console.WriteLine("Found data from list_string: " + list_string.Get(user_input).GetData().ToString());
-        }
-        else if(int.TryParse(user_input, out int number) && list_int.hasNode(int.Parse(user_input))) // Checks the integer list
-        {
-            Console.WriteLine("Found data from list_int: " + list_int.Get(int.Parse(user_input)).GetData().ToString());
-        }
-        else if(list_double.hasNode(user_input))
-        {
-            Console.WriteLine("Found data from list_double: " + list_double.Get(user_input).GetData().ToString());
-        }
-        else
-        {
-            Console.WriteLine("No data found.");
-        }
+        // Testing insert at
 
-        
 
     }
 
@@ -70,5 +54,40 @@ class DriverTwo
         list3.Add("Josh");
         list3.Add("Emma");
 
+    }
+
+    public void SubroutineOne()
+    {
+        // Declaring some things here
+        string? user_input = "";
+        List<string> list_string = new List<string>();
+        List<int> list_int = new List<int>();
+        DoubleList<string>? list_double = new DoubleList<string>();
+
+
+        // Initializing the lists
+        InitializeLists(ref list_string, ref list_int, ref list_double);
+
+        // Retrieving user information
+        Console.Write("Enter node key: ");
+        user_input = Console.ReadLine();
+
+        Console.WriteLine("Searching for data...");
+        if(list_string.hasNode(user_input)) // Checks the string list
+        {
+            Console.WriteLine("Found data from list_string: " + list_string.Get(user_input).GetData().ToString());
+        }
+        else if(int.TryParse(user_input, out int number) && list_int.hasNode(int.Parse(user_input))) // Checks the integer list
+        {
+            Console.WriteLine("Found data from list_int: " + list_int.Get(int.Parse(user_input)).GetData().ToString());
+        }
+        else if(list_double.hasNode(user_input))
+        {
+            Console.WriteLine("Found data from list_double: " + list_double.Get(user_input).GetData().ToString());
+        }
+        else
+        {
+            Console.WriteLine("No data found.");
+        }
     }
 }

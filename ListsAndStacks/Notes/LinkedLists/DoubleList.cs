@@ -86,6 +86,27 @@ class DoubleList<T>
         }
     }
 
+    // Unfinished method
+    public void InsertAtIndex(int index, T data)
+    {
+        Node<T> node = new Node<T>(data);
+
+        if(Head == null)
+        {
+            Console.Write("The list is empty!!");
+        }
+        else
+        {
+            Node<T> current = Head;
+
+            while(index != 0)
+            {
+                current = current.Next;
+                --index;
+            }
+        }
+    }
+
     // Checks to see if the list contains a node with the specified data
     public Boolean hasNode(T data)
     {
